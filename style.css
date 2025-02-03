@@ -1,0 +1,452 @@
+
+/*This dictates the space between the edge of the page and the navbar. Which is now set to nothing*/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    font-weight: 700; /* Set to any value between 100 and 900 */
+    font-style: normal;
+
+    position: relative;
+    background-color: dark;
+}
+
+
+
+
+  
+
+
+/*For the Main heading-Onteora Soccer*/
+h1 {  
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: black;
+    z-index: 1;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    padding-right: 1px;
+
+  
+}
+
+
+
+/*This is for the main part of the navbar*/
+.navbar ul {
+    list-style-type: none;
+    background-color: #842532
+
+
+
+    ;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    
+}
+
+/*This is for the words in the navbar*/
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.938em;
+    display: block;
+    text-align: center;
+   
+}
+
+
+/*This is so when you hover over any of the words in the navbar it changes color*/
+.navbar a:hover {
+    background-color: grey;
+    color: black
+}
+
+/*This is for the list items*/
+.navbar li {
+    float: left;
+
+}
+
+.navbar {
+    height: auto;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+/*Specific margin for unde tthe navbar for the roster page*/
+#roster-page #navbar-container .navbar {
+    margin-bottom: 5rem;  /* Adjust as needed */
+}
+
+#news-page #navbar-container .navbar {
+    margin-bottom: 3rem;  /* Adjust as needed */
+}
+
+
+/*This is for the margin for the text on the main part of the page*/
+main {
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 1.25em;
+
+}
+
+
+
+/*Matches page - for the words DATE and MATCHUP and the boxes that surround them*/
+h2 {
+    padding: 0.938em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 1.25em;
+    line-height: 2.7;
+    letter-spacing: 0.05em;
+    
+}
+/*Matches page - For the heading that holds the words Game schedule*/
+th{
+    border: 0.125em solid black;
+    color: white
+}
+/*Matches page- THE WHOLE SPACE BEHIND THE TABLE*/
+table {
+    text-align: center;
+    margin: 1.25em auto;
+    background-color: #842532;
+}
+
+/*Matches page - For all of the table data like the specific dates and matchup*/
+td {
+    border: 0.125em solid black;
+    width: 18.75em;
+    background-color: #842532;
+    color: white
+}
+
+/*For the whole table kinda*/
+.container {
+    margin-top: 4.688em;
+}
+
+/*For the big words on the top of the matches page that say - Game Schedule*/ 
+.gameSchedule {
+    color: white
+}
+
+
+
+/*This is for the read more paragraph on the roster page*/
+.read-more-desc-section {
+    background-color: #842532;;
+    color: lightgrey;
+    display: grid;
+    
+    
+
+}
+
+
+/*Changes the appereance of the read more button on the matches page*/
+.read-more-btn {
+    background-color: black;
+    color: white;
+    border: 0.063em #e04000;
+    border-radius: 0.313em; /*Rounds corners*/
+    font-weight: bold;
+    
+}
+
+/*Hides the read more text in the matches page*/
+.read-more-text {
+    display: none;
+}
+
+/*Is essential to display the more info text correctly on the matches page*/
+.read-more-text--show{
+    display: block;
+}
+
+/*This function allows for  the cursor to change wheen hovered over the read more button on the matches page*/
+.read-more-btn:hover {
+    cursor: pointer;
+    background-color: #c03000;
+    box-shadow: 0em 0.125em 0.25em rgba(0, 0, 0, 0.2);
+}
+
+
+/*For the description of the news*/
+.description-news {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 1.25em 3.125em;
+    color: white;
+    /*Shadow to make text more legible in front of the image*/
+    text-shadow: 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.7);
+}
+
+/*For the heading of the news*/
+.main-news {
+    font-size: 2em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: white;
+    text-shadow: 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.7);/*Shadow to make text more legible in front of the image*/
+    margin-top: 0;  /* Adjust this value */
+    margin-bottom: 0.875em;
+    text-align: center; /* Centers the heading */
+
+    
+}
+/*For the big image of Elias in the news page*/
+.elias-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire div */
+    object-position: top;
+    z-index: -1; /* Puts the image behind the text */
+    filter: brightness(70%) saturate(120%);
+    ;
+    
+}
+
+/*For the spacing in the news page*/
+.news-heading h1, .news-heading h3 {
+    margin-bottom: 0.875em;
+    margin-top: -25px;
+}
+
+/*For the nav bar about the big schedule on the matches page*/
+.navMatch {
+    background-color: grey;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/*For the list items in the nav bar above the big schedule on the matches page*/
+.navMatch li {
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding: 0.9375em;
+    display: block;
+    text-align: center;
+}
+
+
+
+/* Adjustments for screens narrower than 1366px */
+@media (max-width: 1366px) {
+    .picEagle { 
+        left: 30%; 
+
+    }
+    /* Add styles that make the layout look better on your Chromebook */
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+}
+
+.box {
+    border: 1px black solid;
+    height: 10em;
+}
+
+.picEagle {
+    margin-left: 25rem;
+    margin-top: -20rem;
+    
+}
+
+
+
+.player-card {
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background-color: #f8f9fa;
+    border: 1.5px solid black;
+    padding: 16px;
+    border-radius: 10px;
+    max-width: 75%;
+    margin: 16px auto;
+    gap: 16px;
+  }
+  .player-image {
+    width: 250px;
+    height: auto;
+    border-radius: 5%;
+    object-fit: cover;
+    
+  }
+  .player-info {
+    flex: 1;
+    margin-left: 25%;
+  }
+  .full-bio-link {
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+
+  }
+ 
+
+    .bio-container {
+      margin-top: 8px;
+      margin-right: 100px;
+  }
+
+  .player-info h3 {
+      font-size: 40px;      
+      margin-top: 10px;      
+  }
+
+  .home-paragraph {
+    padding-top: -222rem;
+  }
+
+
+
+  /*The div for the heading and description of the news on the news page */
+.news-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the content vertically */
+    align-items: center; /* Centers the content horizontally */
+    margin-top: 3.563em;
+    padding-top: 3em;
+    background-color: rgba(139, 0, 0, 0.7);
+    background: linear-gradient(to bottom, #8B0000, #333333);
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2);
+    min-height: 50vh; /* Adjust this as necessary */
+    width: 100%;
+
+}
+
+/*For the description of the news*/
+.description-news {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 1.25em 3.125em;
+    color: white;
+    text-shadow: 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.7);
+    text-align: justify; /* For better text readability */
+}
+
+/*For the heading of the news*/
+.main-news {
+    font-size: 2em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: white;
+    text-shadow: 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.7);
+    margin-top: 0; /* Ensure there's no excessive top margin */
+    margin-bottom: 0.875em; /* Space below */
+    text-align: center;
+
+    
+}
+/*For the big image of Elias in the news page*/
+.elias-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire div */
+    object-position: top;
+    z-index: -1; /* Puts the image behind the text */
+    filter: brightness(70%) saturate(120%);
+    ;
+    
+}
+
+/*For the spacing in the news page*/
+.news-heading h1, .news-heading h3 {
+    margin-bottom: 30px;
+}
+
+
+.mensbasketball {
+    padding-right: 2rem;
+    color: white;
+
+}
+
+.Eliasphoto {
+    width: 110%;
+    margin-top: -2rem;
+    margin-left: -2rem;
+}
+
+.main-text {
+    margin-top: -1rem;
+    padding-top: 2rem;
+    text-align: center;
+    line-height: 3rem;
+    color: white;
+}
+
+.main-border {
+    
+    margin-bottom: 2rem;
+    background-color: #842532;
+    margin-left: -2rem;
+    margin-right: -2rem
+
+    
+}
+
+.news-container {
+    display: flex;
+    gap: 20px; /* Adjusts space between the boxes */
+}
+
+.news1, .news2 {
+    width: 50%; /* Adjust size as needed */
+    height: 40rem;
+    border: 2px solid black;
+}
+
+
+.moreText {
+    display: none;
+
+}
+
+.readMoreRoster {
+    cursor: pointer;
+    color: white;
+    margin-right: 4rem;
+    padding: .4rem;
+    background-color: #842532;
+    
+
+    
+}
+
+.moreText--show {
+    display: block;
+    color: black;
+    border: .3rem solid black;
+    width: 23rem;
+    height: 14rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 1.3rem;
+}
+
+.picSam {
+    width: 49%;
+}

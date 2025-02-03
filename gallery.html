@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Standard setup for html, ensures html can use different characters-->
+        <meta charset="UTF-8">
+
+        <!--Standard setup for html, sets the width to match device and ensures that the zoom starts at 100%-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--For the Title on the top of the webpage on the tab-->
+        <title>Onteora Boys Varsity Basketball 2024-2025</title>
+
+        <!--For font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+        
+        <!--Connects html and css-->
+        <link rel="stylesheet" href="style.css">
+        
+        <!--For the icon image on the top of the webpage on the tab-->
+        <link rel="shortcut icon" href="images/onteora logo.ico" type="image/x-icon">
+
+        <script src="main.js" defer></script>
+
+
+       
+        <!--Main heading on top of the page-->
+        <h1>Home of the Onteora Eagles</h1>
+    
+
+        <!--Logo image for the top of the page next to the main title-->
+        <img src="images/eagle logo final.png" alt="Eagle Logo" class="picEagle">
+    
+
+        <!--The nav tag below is for the main nav bar on top of the page -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+               <ul class="nav navbar-nav">
+                <li> <p class="mensbasketball">MEN'S BASKETBALL</p></li>
+
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="roster.html">Roster</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="matches.html">Matches</a></li>
+                    <li><a href="gallery.html">Photos</a></li>
+               </ul>
+            </div>
+            
+        </nav>
+    </head>
+<!--This body tag is for all of the content of the webpage-->
+<body>
+
+    
+
+        <!--Main tag is for the main content of the webpage-->
+        <div id="galleryContent" style="display: none;">
+        <main>
+            
+            <p> Here, we share moments that go beyond the game—capturing the friendships,
+                 support, and family spirit that make our team so special. Each photo
+                  reflects the laughter, hard work, and memories we've created together. 
+                  Once an Eagle, always an Eagle!</p>
+             
+            <!--Main photos on the page-->
+            <img src="images/lucgallery.jpg"class="picSam">
+            <img src ="images/threegallery.jpg" class="picSam">
+            <img src ="images/luctechsnap.jpg" class="picSam">
+            <img src ="images/ryderbodengallery.jpg" class="picSam">
+            <img src ="images/emcrazysnap.jpg" class="picSam">
+            <img src ="images/lucfamilygallery.jpg" class="picSam">
+            <img src="images/blakeigsnap.jpg"class="picSam">
+            <img src ="images/samisosnap.jpg" class="picSam">
+            <img src ="images/lucglorysnap.jpg" class="picSam">
+            <img src ="images/elidunkgallery.jpg" class="picSam">
+            <img src ="images/lucsadsnap.jpg" class="picSam">
+            <img src ="images/rydertrackgallery.jpg" class="picSam">
+            <img src ="images/luccamsnap.jpg" class="picSam">
+
+            
+           
+            <script>
+                if (window.location.href.includes("photo.html"))
+                var password;
+                var pass1="GREAT";
+                password=prompt('Enter Password To View Page. Hint: The answer is the acronym of principles we follow excluding the dots')
+                if (password==pass1) {
+                    alert('Correct password, All hail Elias Foremont and Luc. Click ok to enter');
+                    document.getElementById('galleryContent').style.display = 'block';
+                }
+                else {
+                    document.getElementById('galleryContent').style.display = 'none';
+                    alert('Incorrect Password. Hint: the third letter stands for Energy (All capitals)')
+                }
+                </script>
+
+        </main>
+    </div>
+    </body>
+</html>
