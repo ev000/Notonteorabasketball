@@ -1,13 +1,12 @@
 
 /*This dictates the space between the edge of the page and the navbar. Which is now set to nothing*/
-html, body {
+body {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: "Inter", sans-serif;
     font-weight: 700; /* Set to any value between 100 and 900 */
     font-style: normal;
-
     position: relative;
     background-color: dark;
 }
@@ -37,11 +36,7 @@ h1 {
 /*This is for the main part of the navbar*/
 .navbar ul {
     list-style-type: none;
-    background-color: #842532
-
-
-
-    ;
+    background-color: #842532;
     overflow: hidden;
     position: relative;
     width: auto;
@@ -256,16 +251,7 @@ td {
 
 }
 
-.box {
-    border: 1px black solid;
-    height: 10em;
-}
 
-.picEagle {
-    margin-left: 25rem;
-    margin-top: -20rem;
-    
-}
 
 
 
@@ -277,40 +263,56 @@ td {
     text-align: left;
     background-color: #f8f9fa;
     border: 1.5px solid black;
-    padding: 16px;
+    padding: 1.5%;
     border-radius: 10px;
     max-width: 75%;
-    margin: 16px auto;
-    gap: 16px;
+    margin: auto;
+    
   }
   .player-image {
-    width: 250px;
+    max-width: 250px;
+    width: 20%;
     height: auto;
     border-radius: 5%;
     object-fit: cover;
+    min-width: 150px;
     
   }
   .player-info {
     flex: 1;
     margin-left: 25%;
   }
+
+  @media (max-width: 768px) { /* For smaller screens, adjust the margin */
+    .player-info {
+        margin-left: 10%; /* Reduce margin for better layout on smaller screens */
+    }
+}
+
+@media (max-width: 480px) { /* For very small screens */
+    .player-info {
+        margin-left: 0; /* Remove margin on extra small screens */
+    }
+}
   .full-bio-link {
     text-decoration: none;
     color: brown;
     font-weight: bold;
 
   }
- 
 
-    .bio-container {
-      margin-top: 8px;
-      margin-right: 100px;
-  }
 
   .player-info h3 {
-      font-size: 40px;      
+      font-size: 2.5rem;      
       margin-top: 10px;      
   }
+
+  /* Media query for smaller screens */
+@media (max-width: 600px) {
+    .player-info h3 {
+        font-size: 1.5rem; /* Adjust font size for small screens */
+    }
+}
 
   .home-paragraph {
     padding-top: -222rem;
@@ -378,32 +380,45 @@ td {
 }
 
 
+/*For the nav bar*/
 .mensbasketball {
     padding-right: 2rem;
     color: white;
 
 }
 
+/*Main photo on home page of index*/
 .Eliasphoto {
     width: 110%;
     margin-top: -2rem;
     margin-left: -2rem;
 }
 
+
+/*Text on bottom of index*/
 .main-text {
-    margin-top: -1rem;
-    padding-top: 2rem;
     text-align: center;
-    line-height: 3rem;
+    line-height: 2.6;
     color: white;
+    max-width: 100%; /* Ensure text doesn't exceed container width */
+    width: 100%; /* Full width of the parent */
+    padding: 0 1rem; /* Add some side padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin: 0 auto; /* Center the text */
 }
 
+@media (min-width: 768px) {
+    .main-text {
+        max-width: 800px; /* Limit width on larger screens */
+    }
+}
+/*For box for main text on bottom of index*/
 .main-border {
-    
-    margin-bottom: 2rem;
     background-color: #842532;
-    margin-left: -2rem;
-    margin-right: -2rem
+    margin-left: -5%;
+    margin-right: -5%;
+    padding: 2rem 5%;
+    width: 110%;
 
     
 }
@@ -425,6 +440,13 @@ td {
 
 }
 
+
+/* Show the moreText on smaller screens */
+@media (max-width: 600px) {
+    .moreText {
+        display: block;  /* Or inline-block, depending on your layout */
+    }
+}
 .readMoreRoster {
     cursor: pointer;
     color: white;
@@ -436,17 +458,52 @@ td {
     
 }
 
+
+
 .moreText--show {
     display: block;
     color: black;
     border: .3rem solid black;
     width: 23rem;
-    height: 14rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 5%;
+    padding-right: 4%;
     line-height: 1.3rem;
+    margin-right: 3rem;
 }
+
 
 .picSam {
     width: 49%;
 }
+
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.picEagle {
+    max-width: 150px;
+    height: auto;
+    margin: 0.5rem;
+    order: -1; /* This moves the logo to the left */
+
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+    }
+}
+

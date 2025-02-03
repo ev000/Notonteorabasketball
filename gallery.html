@@ -13,25 +13,20 @@
         <!--For font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
         
-        <!--Connects html and css-->
         <link rel="stylesheet" href="style.css">
-        
-        <!--For the icon image on the top of the webpage on the tab-->
         <link rel="shortcut icon" href="images/onteora logo.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-content">
+                <h1>Home of the Onteora Eagles</h1>
+                <img src="images/eagle logo final.png" alt="Eagle Logo" class="picEagle">
+            </div>  
+        </header> 
 
-        <script src="main.js" defer></script>
-
-
-       
-        <!--Main heading on top of the page-->
-        <h1>Home of the Onteora Eagles</h1>
-    
-
-        <!--Logo image for the top of the page next to the main title-->
-        <img src="images/eagle logo final.png" alt="Eagle Logo" class="picEagle">
-    
 
         <!--The nav tag below is for the main nav bar on top of the page -->
         <nav class="navbar navbar-inverse">
@@ -83,15 +78,15 @@
             <script>
                 if (window.location.href.includes("photo.html"))
                 var password;
-                var pass1="GREAT";
-                password=prompt('Enter Password To View Page. Hint: The answer is the acronym of principles we follow excluding the dots')
+                var pass1="user";
+                password=prompt('Enter Password To View Page. Hint: The password is the first 4 letters of my fortnite name')
                 if (password==pass1) {
                     alert('Correct password, All hail Elias Foremont and Luc. Click ok to enter');
                     document.getElementById('galleryContent').style.display = 'block';
                 }
                 else {
                     document.getElementById('galleryContent').style.display = 'none';
-                    alert('Incorrect Password. Hint: the third letter stands for Energy (All capitals)')
+                    alert('Incorrect Password. Hint:  -e ifykyk (all lowercase)')
                 }
                 </script>
 
