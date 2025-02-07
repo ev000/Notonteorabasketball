@@ -56,32 +56,34 @@
             </div>
 
             <script>
-                window.onload = function() {
-                  // Show disclaimer pop-up
-                  var popupContent = `
-                    <div id="popup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); display: flex; justify-content: center; align-items: center; z-index: 1000;">
-                      <div style="background-color: white; padding: 20px; border-radius: 10px; text-align: center;">
-                        <p><strong>⚠️ Disclaimer: Unofficial Website ⚠️</strong></p>
-                        <p>This website is <strong>not affiliated with, endorsed by, or officially sanctioned by Onteora Central School District.</strong> It is an independent project created to support and promote the Onteora Eagles Varsity team.</p>
-                        <p>All content, including schedules, photos, and commentary, is created by fans and does not reflect the views or policies of the school district.</p>
-                        <p>By continuing, you acknowledge that this is an <strong>unofficial</strong> site.</p>
-                        <button onclick="closePopup()">I acknowledge</button>
-                        <button onclick="showMessagePopup()">Message for Mr. Reimer</button>
-                      </div>
+              // Ensure the pop-up is triggered when the page loads
+              window.onload = function() {
+                // Show disclaimer pop-up
+                var popupContent = `
+                  <div id="popup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); display: flex; justify-content: center; align-items: center; z-index: 1000;">
+                    <div style="background-color: white; padding: 20px; border-radius: 10px; text-align: center;">
+                      <p><strong>⚠️ Disclaimer: Unofficial Website ⚠️</strong></p>
+                      <p>This website is <strong>not affiliated with, endorsed by, or officially sanctioned by Onteora Central School District.</strong> It is an independent project created to support and promote the Onteora Eagles Varsity team.</p>
+                      <p>All content, including schedules, photos, and commentary, is created by fans and does not reflect the views or policies of the school district.</p>
+                      <p>By continuing, you acknowledge that this is an <strong>unofficial</strong> site.</p>
+                      <button onclick="closePopup()">I acknowledge</button>
+                      <button onclick="showMessagePopup()">Additional info for those concerned </button>
                     </div>
-                  `;
-                  
-                  document.body.insertAdjacentHTML("beforeend", popupContent);
-                }
-              
-                // Function to close the disclaimer pop-up
-                function closePopup() {
-                  document.getElementById('popup').style.display = 'none';
-                }
-              
-                // Function to show a second pop-up with a message
-                function showMessagePopup() {
-                  var messagePopupContent = `
+                  </div>
+                `;
+                
+                // Add the pop-up to the body of the document
+                document.body.insertAdjacentHTML("beforeend", popupContent);
+              }
+            
+              // Function to close the disclaimer pop-up
+              function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+              }
+            
+              // Function to show a second pop-up with a message
+              function showMessagePopup() {
+                var messagePopupContent =`
                     <div id="messagePopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); display: flex; justify-content: center; align-items: center; z-index: 1001;">
                       <div style="background-color: white; padding: 20px; border-radius: 10px; text-align: center;">
                         <p><strong>Hello Mr. Reimer and others:</strong></p>
@@ -94,16 +96,21 @@
                       </div>
                     </div>
                   `;
-                  
-                  document.body.insertAdjacentHTML("beforeend", messagePopupContent);
-                }
-              
-                // Function to close the second pop-up with the message
-                function closeMessagePopup() {
-                  document.getElementById('messagePopup').style.display = 'none';
-                }
-              </script>
-              
+                
+                document.body.insertAdjacentHTML("beforeend", messagePopupContent);
+              }
+            
+              // Function to close the second pop-up with the message
+              function closeMessagePopup() {
+                document.getElementById('messagePopup').style.display = 'none';
+              }
+            </script>
+            
+
+
+
+
+           
               
         </main>
     </body>
